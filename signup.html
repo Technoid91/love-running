@@ -19,33 +19,37 @@
         <nav>
             <ul id="menu">
                 <li>
-                    <a href="signup.html">Sign Up</a>
+                    <a href="signup.html" class="active">Sign Up</a>
                 </li>
                 <li>
                     <a href="gallery.html">Gallery</a>
                 </li>
                 <li>
-                    <a href="index.html" class="active">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
             </ul>
         </nav>
 </header>
     <section class="form-section">
-        <form method="POST" action="https://formdump.codeinstitute.net/">
-            <h2>Let's get you signed up!</h2>
+        <form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form">
+            <h2>Let's get you signed up! <i class="fas fa-heartbeat"></i></h2>
             <label for="fname">First Name</label>
-            <input id="fname" type="text" name="first_name" required>
+            <input id="fname" class="text-input" name="first_name" type="text" required>
+    
             <label for="lname">Last Name</label>
-            <input id="lname" type="text" name="last_name" required>
+            <input id="lname" class="text-input" name="last_name" type="text" required>
+    
             <label for="email">Email Address</label>
-            <input id="email" type="email" name="email_address" required>
+            <input type="email" id="email" class="text-input" name="email_address" required>
+    
             <label for="road">Road</label>
-            <input id="road" type="radio" name="running_preference" value="road" required>
+            <input type="radio" id="road" name="running_preference" value="road" required>
             <label for="trail">Trail</label>
-            <input id="trail" type="radio" name="running_preference" value="trail">
+            <input type="radio" id="trail" name="running_preference" value="trail" required>
             <label for="both">Both</label>
-            <input id="both" type="radio" name="running_preference" value="both">
-            <input type="submit" value="Let's Run!">
+            <input type="radio" id="both" name="running_preference" value="both" required>
+    
+            <input class="join-button" type="submit" value="Let's Run!">
         </form>
     </section>
     <footer>
