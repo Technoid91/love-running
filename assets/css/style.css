@@ -262,7 +262,7 @@ footer {
 /* sign up page*/
 .form-section {
     clear: left;
-    background-image: url("../images/formbg.jpeg");
+    background-image: url("../images/signup-bg.png");
     background-size: cover;
     background-position: center;
     height: 900px;
@@ -402,5 +402,12 @@ footer {
 @media screen and (max-width: 800px) {
     #photos {
         column-count: 2;
+    }
+
+    .form-section {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 700px;
     }
 }
